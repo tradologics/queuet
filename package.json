@@ -1,0 +1,31 @@
+{
+  "name": "queuet",
+  "version": "0.0.3",
+  "description": "Dead simple, Redis-based, message broker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranaroussi/queuet.git"
+  },
+  "keywords": [
+    "message",
+    "broker",
+    "message",
+    "queue",
+    "redis",
+    "pubsub"
+  ],
+  "author": "Ran Aroussi",
+  "license": "Apache-2.0 ",
+  "bugs": {
+    "url": "https://github.com/ranaroussi/queuet/issues"
+  },
+  "homepage": "https://github.com/ranaroussi/queuet#readme",
+  "dependencies": {
+    "ioredis": "^4.14.1",
+    "microtime": "^3.0.0"
+  }
+}
