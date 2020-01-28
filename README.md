@@ -1,4 +1,14 @@
-# QueueT - Dead simple, Redis-based, message broker
+<img src="https://github.com/ranaroussi/queuet/blob/master/assets/logo.png?raw=true" height="72">
+
+# Dead Simple, Redis-Based, Message Broker for Node.js
+
+## Install
+
+```
+$ npm install queuet
+```
+
+## Use
 
 ### Publisher
 
