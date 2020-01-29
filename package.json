@@ -1,6 +1,6 @@
 {
   "name": "queuet",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Dead simple, Redis-based, message broker",
   "main": "index.js",
   "scripts": {

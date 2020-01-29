@@ -19,7 +19,7 @@
 
 /* jshint esversion: 6 */
 
-const redisIO = require("ioredis");
+const ioredis = require("ioredis");
 const microtime = require('microtime');
 
 var conn,
@@ -45,7 +45,7 @@ var conn,
 function main_connection() {
     // main connection
     if (conn === undefined) {
-        conn = new redisIO(conn_url, conn_options);
+        conn = new ioredis(conn_url, conn_options);
     }
 }
 
@@ -56,7 +56,7 @@ function subsciber_connection() {
 
     // subscriber connection
     if (sub_conn === undefined) {
-        sub_conn = new redisIO(conn_url, conn_options);
+        sub_conn = new ioredis(conn_url, conn_options);
     }
 }
 
@@ -83,7 +83,7 @@ function disconnect() {
         conn = undefined;
     }
     if (sub_conn !== undefined) {
-        sub_conn.dissub_connect();
+        sub_conn.disconnect();
         sub_conn = undefined;
     }
 }
@@ -98,21 +98,11 @@ module.exports = {
         conn_options = options || {};
     },
 
-    disconnect: function () {
-        // disronnect from all
-        if (conn !== undefined) {
-            conn.disconnect();
-            conn = undefined;
-        }
-        if (sub_conn !== undefined) {
-            sub_conn.dissub_connect();
-            sub_conn = undefined;
-        }
-    },
+    disconnect: disconnect,
 
     publish: function (data) {
         main_connection();
-        const id = microtime.now().toString() + Math.floor(1000 + Math.random() * 9000).toString();
+        const id = microtime.now().toString() + Math.floor(100 + Math.random() * 900).toString();
         conn.set(parse_id(id), data);
         return conn.publish(queue_name, id);
     },
