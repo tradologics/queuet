@@ -58,6 +58,7 @@ function subsciber_connection() {
     if (sub_conn === undefined) {
         sub_conn = new ioredis(conn_url, conn_options);
     }
+    return sub_conn;
 }
 
 function parse_id(id) {
