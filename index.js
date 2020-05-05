@@ -73,7 +73,7 @@ function get_item(id, callback) {
     main_connection();
     id = parse_id(id);
     conn.get(id).then(function (data) {
-        callback(id, data);
+        callback(id, JSON.parse(data));
     });
 }
 
@@ -105,7 +105,7 @@ module.exports = {
     publish: function (data) {
         main_connection();
         const id = microtime.now().toString() + Math.floor(100 + Math.random() * 900).toString();
-        conn.set(parse_id(id), data);
+        conn.set(parse_id(id), JSON.stringify(data));
         return conn.publish(queue_name, id);
     },
 
