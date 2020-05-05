@@ -1,5 +1,5 @@
 {
-  "name": "queuet",
+  "name": "@tradologics/queuet",
   "version": "0.0.5",
   "description": "Dead simple, Redis-based, message broker",
   "main": "index.js",
@@ -27,5 +27,12 @@
   "dependencies": {
     "ioredis": "^4.14.1",
     "microtime": "^3.0.0"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "devDependencies": {},
+  "publishConfig": {
+    "access": "public"
   }
 }
