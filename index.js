@@ -17,8 +17,6 @@
  * limitations under the License.
  */
 
-/* jshint esversion: 6 */
-
 const ioredis = require("ioredis");
 const microtime = require('microtime');
 
@@ -124,7 +122,7 @@ module.exports = {
     subscribe: (callback) => {
         subsciber_connection();
         sub_conn.subscribe(queue_name);
-        sub_conn.on("message", (ch, id) => {
+        sub_conn.on("message", (queue_name, id) => {
             get_item(id, callback);
         });
 
