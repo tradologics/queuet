@@ -47,6 +47,7 @@ function main_connection() {
     if (conn === undefined) {
         conn = new ioredis(conn_url, conn_options);
     }
+    return conn;
 }
 
 
