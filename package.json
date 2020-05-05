@@ -1,6 +1,6 @@
 {
   "name": "queuet",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Dead simple, Redis-based, message broker",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ranaroussi/queuet.git"
+    "url": "git+https://github.com/tradologics/queuet.git"
   },
   "keywords": [
     "message",
@@ -18,12 +18,12 @@
     "redis",
     "pubsub"
   ],
-  "author": "Ran Aroussi",
+  "author": "Tradologics",
   "license": "Apache-2.0 ",
   "bugs": {
-    "url": "https://github.com/ranaroussi/queuet/issues"
+    "url": "https://github.com/tradologics/queuet/issues"
   },
-  "homepage": "https://github.com/ranaroussi/queuet#readme",
+  "homepage": "https://github.com/tradologics/queuet#readme",
   "dependencies": {
     "ioredis": "^4.14.1",
     "microtime": "^3.0.0"

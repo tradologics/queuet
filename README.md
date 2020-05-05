@@ -1,10 +1,10 @@
-<img src="https://github.com/ranaroussi/queuet/blob/master/assets/logo.png?raw=true" height="72">
+<img src="https://github.com/tradologics/queuet/blob/master/assets/logo.png?raw=true" height="72">
 
 # Dead Simple, Redis-Based, Message Broker for Node.js
 
-<a href="https://www.npmjs.com/package/queuet)"><img alt="npm Version" src="https://badge.fury.io/js/queuet.svg"></a>
-<a href="https://www.codefactor.io/repository/github/ranaroussi/queuet)"><img alt="Code Factor" src="https://www.codefactor.io/repository/github/ranaroussi/queuet/badge"></a>
-<a href="https://github.com/ranaroussi/queuet)"><img alt="Star this repo" src="https://img.shields.io/github/stars/ranaroussi/queuet.svg?style=social&label=Star&maxAge=60"></a>
+<a href="https://www.npmjs.com/package/queuet"><img alt="npm Version" src="https://badge.fury.io/js/queuet.svg"></a>
+<a href="https://www.codefactor.io/repository/github/tradologics/queuet"><img alt="Code Factor" src="https://www.codefactor.io/repository/github/tradologics/queuet/badge"></a>
+<a href="https://github.com/tradologics/queuet"><img alt="Star this repo" src="https://img.shields.io/github/stars/tradologics/queuet.svg?style=social&label=Star&maxAge=60"></a>
 <a href="https://twitter.com/aroussi"><img alt="Follow me on" src="https://img.shields.io/twitter/follow/aroussi.svg?style=social&label=Follow&maxAge=60"></a>
 
 
