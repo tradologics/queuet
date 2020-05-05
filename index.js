@@ -91,8 +91,11 @@ function disconnect() {
 }
 
 
-
 module.exports = {
+
+    redis: ioredis,
+    connection: main_connection(),
+    disconnect: disconnect,
 
     initialize: function (qname, conn_str, options) {
         queue_name = qname;
@@ -100,7 +103,6 @@ module.exports = {
         conn_options = options || {};
     },
 
-    disconnect: disconnect,
 
     publish: function (data) {
         main_connection();
