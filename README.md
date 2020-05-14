@@ -12,7 +12,7 @@
 ## Install
 
 ```
-$ npm install queuet
+$ npm install @tradologics/queuet
 ```
 
 ## Use
