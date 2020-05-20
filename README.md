@@ -2,6 +2,7 @@
 
 # Dead Simple, Redis-Based, Message Broker for Node.js
 
+<a href="https://tradologics.com/opensource"><img alt="npm Version" src="https://img.shields.io/badge/By-Tradologics-7269a6"></a>
 <a href="https://www.npmjs.com/package/@tradologics/queuet"><img alt="npm Version" src="https://badge.fury.io/js/%40tradologics%2Fqueuet.svg"></a>
 <a href="https://www.codefactor.io/repository/github/tradologics/queuet"><img alt="Code Factor" src="https://www.codefactor.io/repository/github/tradologics/queuet/badge"></a>
 <a href="https://github.com/tradologics/queuet"><img alt="Star this repo" src="https://img.shields.io/github/stars/tradologics/queuet.svg?style=social&label=Star&maxAge=60"></a>
