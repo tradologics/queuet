@@ -92,7 +92,9 @@ function disconnect() {
 module.exports = {
 
     redis: ioredis,
-    connection: main_connection(),
+    connection: function () {
+        return main_connection();
+    },
     disconnect: disconnect,
 
     initialize: function (qname, conn_str, options) {
