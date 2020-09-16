@@ -21,7 +21,7 @@ $ npm install @tradologics/queuet
 ### Publisher
 
 ```javascript
-const broker = require("queuet");
+const broker = require("@tradologics/queuet");
 
 // connect to redis
 broker.initialize("myqueue");
