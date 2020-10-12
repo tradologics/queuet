@@ -1,4 +1,4 @@
-<img src="https://github.com/tradologics/queuet/blob/master/assets/logo.png?raw=true" height="72">
+<img src="https://github.com/tradologics/queuet/blob/main/assets/logo.png?raw=true" height="72">
 
 # Dead Simple, Redis-Based, Message Broker for Node.js
 
