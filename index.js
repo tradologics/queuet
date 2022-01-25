@@ -18,7 +18,6 @@
  */
 
 const ioredis = require("ioredis");
-const microtime = require('microtime');
 
 var conn,
     sub_conn,
@@ -106,7 +105,7 @@ module.exports = {
 
     publish: function (data) {
         main_connection();
-        const id = microtime.now().toString() + Math.floor(100 + Math.random() * 900).toString();
+        const id = +new Date() + Math.floor(100 + Math.random() * 900).toString();
         conn.set(parse_id(id), JSON.stringify(data));
         return conn.publish(queue_name, id);
     },
